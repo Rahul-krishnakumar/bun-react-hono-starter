@@ -1,0 +1,18 @@
+{
+  "name": "bun-react-hono-starter",
+  "private": "true",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun run --filter '*' dev",
+    "dev:client": "bun run --filter '@repo/client' dev",
+    "dev:server": "bun run --filter '@repo/server' dev",
+    "build": "bun run --filter '*' build",
+    "typecheck": "bun --filter '*' typecheck"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
